@@ -2,6 +2,7 @@ package hw2;
 
 public class Box {
     int value;
+
     public Box(int boxvalue) {
         this.value = boxvalue;
     }
@@ -12,8 +13,7 @@ public class Box {
             value -= shape.shapevalue;
             System.out.println("adding shape: " + value);
             return true;
-        }
-        else {
+        } else {
             System.out.println("no space");
             return false;
         }

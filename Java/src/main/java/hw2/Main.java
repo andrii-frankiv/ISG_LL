@@ -10,7 +10,6 @@ public class Main {
         boolean a;
         System.out.println("input Shapes value");
         do {
-//            Shape shape = new Shape(in.nextInt());
             Shape shape = new Shape(in.nextInt());
             a = box.add(shape);
             System.out.println(a);
