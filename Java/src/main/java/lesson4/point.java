@@ -1,7 +1,26 @@
 package lesson4;
 
-public class Objj {
-    int[] x = {6, 5, 4, 3, 2,1};
-    int[] y = {6, 5, 4, 3, 2, 1};
-    String[] color = {"red", "blue", "green", "yellow", "black", "green1", "red2"};
+public class point {
+    public point(int x, int y, String color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+    }
+
+    int x;
+    int y;
+    String color;
+
+     public String show(int x, int y, String color){
+        return "x - " + x + "y - " + y + "color - " + color;
+    }
+
+    @Override
+    public String toString() {
+        return "point{" +
+                "x=" + x +
+                ", y=" + y +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }

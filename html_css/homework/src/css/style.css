@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+     width:100%;
+     padding:20px 0;
+     display: flex;
+     justify-content: space-around;
+     background-color: black;
+}
+.headerList{
+    text-decoration: none;
+    color:white;
+}
+.headerList:hover{
+    color:orange;
+    transition: .2s;
+    border-bottom: 1px solid orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                /*  Animation for Serhiy    */
+
+
+/* .astro{
+	margin:10vh auto;
+	height:193px;
+	width:151px;
+	background:url("astro.png");
+	animation:astro 0.8s steps(20) infinite;
+}
+@keyframes astro{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: -3025px;
+	}
+} */
