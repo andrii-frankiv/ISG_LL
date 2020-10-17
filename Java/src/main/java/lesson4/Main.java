@@ -24,6 +24,7 @@ public class Main {
     public static void showSome(int[] x, int[] y, String[] color) {
         for (int i = 0; i < x.length; i++) {
             System.out.println();
+            System.out.println();
         }
     }
 }
