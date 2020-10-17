@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45b7f113-01b1-4e64-9ba3-b90926c7ab9d" name="Default Changelist" comment="DAY2 HomeWork3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson4/point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/hw1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/out/production/hw1/hwfirst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/src/hwfirst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../html_css/homework/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../html_css/homework/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../html_css/homework/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../html_css/homework/src/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,7 @@
       <recent name="C:\Users\marty\ISG_LL\Java\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hw2_2.Main" />
       <module name="Java" />
@@ -150,7 +144,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
