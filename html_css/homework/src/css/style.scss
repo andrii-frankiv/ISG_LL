@@ -1,0 +1,221 @@
+$bgcolor:#f5f5f5;
+$txtcolor:#445162;
+*{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+   
+    .content{
+        flex: 1 1 auto;
+
+        .header{
+            background-color: $txtcolor;
+            .header__row{   
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                
+                .header__content{
+                    color:#fff;
+                
+                    .header__title{
+                        font-size: 30px;
+                        margin: 20px 0;
+                    }
+                    .header__list{
+                        margin: 20px 0;
+                        padding-left: 30px ;
+                        line-height: 26px;
+                    }
+                }
+                .header__photo{
+                    img{
+                        height:200px;
+                        padding: 50px;
+                    }
+                }
+            }
+
+        }
+        .what{
+            padding: 50px;
+            .what__row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                
+                .what__img{ 
+                    padding: 0 50px 0 0 ;
+                    flex: 0 0 350px;
+                    img{
+                        width: 100%;                //could be a problem
+                    }
+                }
+                .what__body{
+                    margin: 0 0 0 50px;
+                    .what__title{
+                        padding: 0 0 20px;
+                    }
+
+                    .what__text{
+                        padding: 20px 0;
+                        p{
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .columns{
+            padding: 0 50px 0 20px;
+            background-color:$bgcolor;
+
+            .columns__title{
+                text-align: center;
+                margin: 0 0 30px 0;
+                padding: 30px 0 0 0;
+            }
+            .columns__row{
+                display: flex;
+                flex-wrap: wrap;
+                color: $txtcolor;
+                // margin: 0px -10px;
+
+                
+                .columns__column{
+                    flex: 0 1 50%;
+                    margin: 0 0 50px 0;
+                    // padding: 0px 10px;
+                    .columns__item{
+
+                        .item__row{
+                            display: flex;
+
+                            .item__img{
+                                flex: 0 0 150px;
+                                img{
+                                    position: relative;
+                                    width: 100%;
+                                }
+                            }
+                            .item__body{
+                                flex: 1 1 auto;
+                                padding: 0 20px;
+                                .item__title{
+                                    font-size: 24px;
+                                    line-height: 30px;
+                                    padding:0 0 10px 0;
+                                }
+                                .item__text{
+                                    font-size: 16px;
+                                    line-height:22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cards{
+            padding: 50px;//can changing
+
+            .cards__title{
+                text-align: center;
+                margin:  0 0 50px 0;
+            }
+            .cards__body{
+                max-width: 1000px;
+                margin: 0 auto;
+
+                .cards__row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    // align-items: ;
+                    //margin: 0px -20px;
+
+                    .cards__column{
+                        flex: 0 1 30%;
+                        display: flex;
+                        // padding: 0px 20px;
+                        
+                        .cards__item{
+                            background-color:$txtcolor;
+                            color:white;
+                            border-radius: 5px;
+                            border: 1px solid $txtcolor;
+                            display: flex;
+                            flex-direction: column;
+
+                            .cards__name{
+                                text-align: center;
+                                padding: 20px;
+                                font-size: 30px;
+                                text-transform: uppercase;
+                            }
+                            .cards__subname{
+                                color:$txtcolor;
+                                font-size: 30px;
+                                background-color: $bgcolor;
+                                text-align: center;
+                                text-transform: uppercase;
+                                padding: 10px;
+                            }
+                            .cards__text{
+                                padding: 15px;
+                                line-height: 22px;
+                                flex: 1 1 auto;
+                                p{
+                                    margin: 10px 0;
+                                }
+                            }
+                            .cards__btn{
+                                display: block;
+                                text-align: center;
+                                margin: 15px 20px;
+                                text-decoration: none;
+                                background-color:$bgcolor;
+                                color: #445162;
+                                padding: 10px;
+                                border-radius: 5px;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    .title{
+        font-size: 30px;
+        line-height: 30px;
+        color:$txtcolor;
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer{
+        background-color: $bgcolor;
+
+        &__row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65px;
+            &__text{
+                font-style: 12px;
+                letter-spacing: 0.3px;
+                color:$txtcolor;
+            }
+        }
+    }
+}
