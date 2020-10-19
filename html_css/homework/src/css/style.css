@@ -212,7 +212,9 @@
           flex-direction: column;
 }
 
-.wrapper .content .cards .cards__body .cards__row .cards__column .cards__item .cards__name {
+.wrapper .content .cards .cards__body .cards__row .cards__column .cards__item .cards__name p{
+  color:red;
+}
   text-align: center;
   padding: 20px;
   font-size: 30px;
