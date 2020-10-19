@@ -19,13 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45b7f113-01b1-4e64-9ba3-b90926c7ab9d" name="Default Changelist" comment="Deleted 1 homeWork for Roman. Sorry :)">
+    <list default="true" id="45b7f113-01b1-4e64-9ba3-b90926c7ab9d" name="Default Changelist" comment="Parody for LinkedList :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/lesson4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/lesson4/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/lesson4/point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/lesson4/point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hwList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hwList/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hwList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hwList/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html_css/homework/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../html_css/homework/src/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603142613748</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Parody for LinkedList :)">
+      <created>1603145503514</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603145503514</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,7 +187,8 @@
     <MESSAGE value="DAY2 HomeWork3" />
     <MESSAGE value="commit" />
     <MESSAGE value="Deleted 1 homeWork for Roman. Sorry :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted 1 homeWork for Roman. Sorry :)" />
+    <MESSAGE value="Parody for LinkedList :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parody for LinkedList :)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="40" key="#Project_Structure" timestamp="1602608879065">
