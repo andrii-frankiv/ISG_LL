@@ -142,7 +142,7 @@ do {
 
 let n = 10;
 
-nextPrime:
+
 for (let i = 2; i <= n; i++) {
 
   for (let j = 2; j < i; j++) {
