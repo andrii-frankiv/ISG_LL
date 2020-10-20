@@ -59,13 +59,13 @@ public class LinkedList<E> implements List<E> {
     @Override
     public boolean remove(Object o) {
         Node current = head;   //  for saving
-        for (int i = 0; i < size; i++) {
+        while (current != null) {
             if (o.equals(current.value)) {
-                System.out.println("deleted");
-                Node temp = current.prev;
-                temp.next = current.next;
-                temp = current.next;
-                temp.prev = current.prev;
+                System.out.println(current.value + "  deleted");
+                Node prev = current.prev;
+                Node next = current.next;
+                current.next.prev = current.prev;
+                current.prev.next = current.next;
                 current.prev = null;
                 current.next = null;
                 size--;
