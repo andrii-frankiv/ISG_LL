@@ -14,27 +14,15 @@ public class LinkedList<E> implements List<E> {
 
     @Override
     public int size() {
-        size = 0;
-        Node head1 = head;
-       while (head != null) {
-            size++;
-            head = head.next;
-        }
-        head = head1;
         System.out.println("size: " + size);
-        return size;//should to recreate, bad function xD
+        return size;
     }
 
     @Override
     public boolean isEmpty() {
-        if (head.prev == null) {
-            System.out.println("empty");
-            return true;
-        } else {
-            System.out.println("full");
-            return false;
-        }
+        return size == 0;
     }
+
 
     @Override
     public boolean contains(Object o) {
@@ -60,12 +48,8 @@ public class LinkedList<E> implements List<E> {
             System.out.println(size + " : " + tail.value + " : " + tail.prev);
             return true;
         } else {
-            if (size == 1) {
-                head = tail;
-            }
             tail.next = new Node((E) o, tail, null);
             tail = tail.next;
-
             size++;
             System.out.println(size + " : " + tail.value + " : " + tail.prev);
             return true;
@@ -74,28 +58,24 @@ public class LinkedList<E> implements List<E> {
 
     @Override
     public boolean remove(Object o) {
-        int k = 0;
         Node current = head;   //  for saving
         for (int i = 0; i < size; i++) {
-            if (((E) o).equals(current.value)) {
+            if (o.equals(current.value)) {
                 System.out.println("deleted");
                 Node temp = current.prev;
                 temp.next = current.next;
                 temp = current.next;
                 temp.prev = current.prev;
-                k = 1;
                 current.prev = null;
                 current.next = null;
                 size--;
-                break;
-            } else System.out.println("not deleted");
+                return true;
+            } else {
+                System.out.println("not deleted");
+            }
             current = current.next;
         }
-        if (k == 1) {
-            System.out.println((E) o + " deleted");
-            return true;
-        } else
-            return false;
+        return false;
     }
 
     @Override
@@ -111,14 +91,14 @@ public class LinkedList<E> implements List<E> {
     @Override
     public void clear() {
         Node temp = head;
-        for (; temp != null;) {
+        while (temp != null) {
             Node next = temp.next;
             temp.value = null;
             temp.prev = null;
             temp.next = null;
-
             temp = next;
         }
+        size = 0;
         head = null;
         System.out.println("clear.");
     }
@@ -133,7 +113,7 @@ public class LinkedList<E> implements List<E> {
         } else {
             System.out.println("Try again");
 
-            throw new NotCorrectIndexEcxeption("Index can't be negative or higher than list size !");
+            throw new NotCorrectIndexException("Index can't be negative or higher than list size !");
         }
         return null;
     }
