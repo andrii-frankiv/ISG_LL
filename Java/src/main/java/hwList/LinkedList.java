@@ -61,17 +61,21 @@ public class LinkedList<E> implements List<E> {
         Node current = head;   //  for saving
         while (current != null) {
             if (o.equals(current.value)) {
+                if (current == head) {
+                    head = current.next;
+                    head.prev = null;
+                }
                 System.out.println(current.value + "  deleted");
-                Node prev = current.prev;
-                Node next = current.next;
-                current.next.prev = current.prev;
-                current.prev.next = current.next;
+                if (current.next != null) {
+                    current.next.prev = current.prev;
+                }
+                if (current.prev != null) {
+                    current.prev.next = current.next;
+                }
                 current.prev = null;
                 current.next = null;
                 size--;
                 return true;
-            } else {
-                System.out.println("not deleted");
             }
             current = current.next;
         }
@@ -79,8 +83,14 @@ public class LinkedList<E> implements List<E> {
     }
 
     @Override
-    public boolean addAll(Collection c) {
-        return false;
+    public boolean addAll(Collection<? extends E> c) {
+        if (c.isEmpty()) {
+            return false;
+        }
+        for (E o : c) {
+            add(o);
+        }
+        return true;
     }
 
     @Override
@@ -110,12 +120,12 @@ public class LinkedList<E> implements List<E> {
                 current = current.next;
             }
             System.out.println(current.value);
+            return current.value;
         } else {
             System.out.println("Try again");
 
             throw new NotCorrectIndexException("Index can't be negative or higher than list size !");
         }
-        return null;
     }
 
     @Override
@@ -164,8 +174,14 @@ public class LinkedList<E> implements List<E> {
     }
 
     @Override
-    public boolean removeAll(Collection c) {
-        return false;
+    public boolean removeAll(Collection<?> c) {
+        if (c.isEmpty()) {
+            return false;
+        }
+        for (Object o : c) {
+            remove(o);
+        }
+        return true;
     }
 
     @Override
