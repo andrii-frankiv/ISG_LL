@@ -24,6 +24,6 @@ public class Main {
         stream1 = Stream.iterate(new int[]{0, 1}, x -> new int[]{x[1], x[0] + x[1]})
                 .map(x -> x[0])
                 .limit(10);
-        stream1.forEach(s1 -> System.out.println(s1));
+        stream1.forEach(s -> System.out.println(s));
     }
 }
