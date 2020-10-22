@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<String>();
 
+
         list.add("lalala 1");
         list.add("lalala 2");
         list.add("lalala 3");
@@ -18,6 +19,7 @@ public class Main {
         list.isEmpty();
         list.remove("lalala 3");
         list.size();
+        System.out.println(list.getClass().getAnnotation(MyAnnotation.class).message());
         list.get(2);
         //list.clear(); if you want to clear all list
         list.size();

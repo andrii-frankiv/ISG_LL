@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
-
+@MyAnnotation(message = "Careful ! You can't use negative index and higher than list size !")
 public class LinkedList<E> implements List<E> {
 
     private int size = 0;
@@ -45,7 +45,7 @@ public class LinkedList<E> implements List<E> {
             tail = new Node((E) o, null, null);
             head = tail;
             size++;
-            System.out.println(size + " : " + tail.value + " : " + tail.prev);
+            System.out.println(size + ":" + tail.value + ":" + tail.prev);
             return true;
         } else {
             tail.next = new Node((E) o, tail, null);
@@ -112,8 +112,7 @@ public class LinkedList<E> implements List<E> {
         head = null;
         System.out.println("clear.");
     }
-
-    public E get(int index) {
+public E get(int index) {
         if (index >= 0 && index < size) {
             Node current = head;//for saving tail
             for (int i = 0; i < index; i++) {
@@ -134,19 +133,19 @@ public class LinkedList<E> implements List<E> {
     }
 
     @Override
-    public void add(int index, Object element) {
+    public void add(int index, Object element) {//try
 
     }
 
     @Override
     public E remove(int index) {
         return null;
-    }
+    }//try
 
     @Override
     public int indexOf(Object o) {
         return 0;
-    }
+    }//try
 
     @Override
     public int lastIndexOf(Object o) {
