@@ -1,0 +1,23 @@
+
+.container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 50px auto;
+
+    .content{
+
+        .counter{
+            text-align: center;
+        }
+        .row-item{
+            display: flex;
+            justify-content: space-between;
+            margin: 50px;
+            .item-btn{
+                padding: 10px 20px;
+            }
+        }
+    }
+    
+
+}
