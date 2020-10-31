@@ -1,16 +1,12 @@
 
-import React from 'react';
 import './Item.scss';
 
-const Item = ({items}) => {
-
-  const [id,setId]=(0);
+const Item = ({text,id}) => {
 
     return (
 
           <div className='row-item'>
-            <p className='item-id'>{setId(id+1)}</p>
-            <p className='item-content'>{items}</p>
+            <p className='item-content'>{text}</p>
             <button className='item-btn'>X</button>
           </div>
 

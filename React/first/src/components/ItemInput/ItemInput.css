@@ -17,4 +17,12 @@
   -webkit-box-shadow: 0 0 1px green;
           box-shadow: 0 0 1px green;
 }
+
+.iteminput-btn {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 15px 25px;
+}
 /*# sourceMappingURL=ItemInput.css.map */

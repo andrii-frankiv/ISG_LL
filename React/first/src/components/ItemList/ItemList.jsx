@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+
 import './ItemList.scss';
 import Item from '../Item/Item';
 
@@ -6,19 +6,20 @@ import Item from '../Item/Item';
     // const [items, setItems] = useState([{  //function which change/create(?)
     //   id: '1',
     //   content: 'lalaa',
-    // }])
+    // }])h
 
 
     return (
-      
+      console.log(items),
         <div className='content'>
-          { items.map( item => { 
-            /*return*/
-            <Item key ={item}
-            // id = {el.id}
-            items = {item}
-            />
-          })
+          {
+            items.map( item => {
+              return (
+              <Item key ={item} 
+              text = {item}
+              />
+              )
+            })
           }
         </div>
 

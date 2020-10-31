@@ -10,18 +10,18 @@ const App = () => {
   const [items, setItems] = useState([]);
   const [value, setValue] = useState('');
 
-  const updateValue = (value) =>{
-    setValue(value);
-  }
-  const addItems = (  ) =>{
-    setItems( ...items, value);
+  const addItems = ( ) =>{
+    if(value){
+    setItems([...items, value]);
+    setValue('');
+    }
   }
 
        return (
 
         <div className='container'>
           <h1 className='main-title'>ToDo List</h1>
-          <ItemInput items ={items} updateValue={updateValue} addItems={addItems}/>
+          <ItemInput value = {value} setValue={setValue} addItems = {addItems}/>
           <div className='todo-list'>
             <ItemList items = {items}/>
           </div> 

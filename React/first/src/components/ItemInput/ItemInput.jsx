@@ -2,19 +2,13 @@
 import React from 'react';
 import './ItemInput.css';
 
-const ItemInput = ({addItems}) => {
-  
-  const onChange = (event)   =>{
-    const value = event.target.value;
-    console.log(value);
-    return value;
-  }
+const ItemInput = ({value, setValue, addItems}) => {
   
     return (
 
         <div>
-          <input type='text' className='item-input' placeholder='some text' onChange={onChange}/>
-          <button onClick={addItems()}></button>
+          <input type='text' className='item-input' placeholder='some text' onChange={(e) => setValue(e.target.value)} value = {value}/>
+          <button className='iteminput-btn' onClick={() => addItems()}>Add Item</button>
         </div>
 
     )
