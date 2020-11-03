@@ -1,0 +1,83 @@
+  Promises
+    Promises
+      ✕ makePromiseResolveWith3 should create Promise with resolved 3  (1 ms)
+      ✕ makePromiseRejectWithBoo should create Promise with rejected string "Boo"
+      ✓ makeDelayPromise should returns Promise resolved with a provided value after the provided delay (3007 ms)
+      makePromiseWithConstructor should return a Promise
+        ✓ should resolves if "itShouldResolve" is true  (2 ms)
+        ✓ should rejects if "itShouldResolve" is false
+      waitForPromise should call an action after the promise completion
+        ✓ if promise resolves (1 ms)
+        ✕ if promise rejects (2 ms)
+      consumePromise should call a consumer with handled value after the promise completion
+        ✓ resolved value should be handled by handler before passed to consumer (1 ms)
+        ✕ rejected value should be handled by handler before passed to consumer (1 ms)
+
+  ● Promises › Promises › makePromiseResolveWith3 should create Promise with resolved 3
+
+    TypeError: Cannot read property 'then' of undefined
+
+      13 |
+      14 |     it('makePromiseResolveWith3 should create Promise with resolved 3 ', () => {
+    > 15 |       return items['makePromiseResolveWith3']().then(result => {
+         |              ^
+      16 |         expect(result.toString()).toEqual('3');
+      17 |       })
+      18 |     });
+
+      at Object.<anonymous> (promises.spec.js:15:14)
+
+  ● Promises › Promises › makePromiseRejectWithBoo should create Promise with rejected string "Boo"
+
+    TypeError: Cannot read property 'catch' of undefined
+
+      18 |     });
+      19 |     it('makePromiseRejectWithBoo should create Promise with rejected string "Boo" ', () => {
+    > 20 |       return items['makePromiseRejectWithBoo']().catch(result => {
+         |              ^
+      21 |         expect(result).toEqual('Boo!');
+      22 |       })
+      23 |     });
+
+      at Object.<anonymous> (promises.spec.js:20:14)
+
+  ● Promises › Promises › waitForPromise should call an action after the promise completion › if promise rejects
+
+    expect(jest.fn()).toHaveBeenCalled()
+
+    Expected number of calls: >= 1
+    Received number of calls:    0
+
+      61 |         const action = jest.fn();
+      62 |         await items['waitForPromise'](items['makePromiseWithConstructor'](false), action);
+    > 63 |         expect(action).toHaveBeenCalled();
+         |                        ^
+      64 |       });
+      65 |     });
+      66 |
+
+      at Object.<anonymous> (promises.spec.js:63:24)
+
+  ● Promises › Promises › consumePromise should call a consumer with handled value after the promise completion › rejected value should be handled by handler before passed to consumer
+
+    expect(jest.fn()).toHaveBeenCalled()
+
+    Expected number of calls: >= 1
+    Received number of calls:    0
+
+      82 |
+      83 |         await items['consumePromise'](Promise.reject(), mockConsumer, mockHandler);
+    > 84 |         expect(mockHandler).toHaveBeenCalled();
+         |                             ^
+      85 |         expect(mockConsumer).toHaveBeenCalledWith('handled');
+      86 |       })
+      87 |     });
+
+      at Object.<anonymous> (promises.spec.js:84:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 5 passed, 9 total
+Snapshots:   0 total
+Time:        4.861 s
+Ran all test suites matching /promises.spec.js/i.
+npm ERR! Test failed.  See above for more details.
